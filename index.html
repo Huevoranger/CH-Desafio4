@@ -1,0 +1,76 @@
+<!--Coder House
+Curso backend
+Grupo: 22885
+Nombre: Erick Omar Sandoval Báez
+DESAFIO 4-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Desafio 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      body{
+      font-family: 'Roboto', 'light 300';
+      font-weight:bold;
+      color: #e85a3e;
+      text-align: center;
+      background-color: #082032;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <header>
+      <style>
+        header{
+        font-family: 'Roboto', 'regular 400';
+        color: #e85a3e;
+        text-align: center;
+        background-color: #082032;
+        }
+      </style>
+      <h1>Agregar de Productos</h1>
+    </header>
+    
+
+    <main>
+
+      <!-- It contains an article -->
+
+        <form action="../api/productos" method="post">
+             
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="name" style="background-color:#2C394B">
+             
+               <label for="price">Precio:</label>
+               <input type="number" id="price" name="price" style="background-color:#2C394B">
+             
+               <label for="stock">Stock</label>
+               <input type="boolean" id="stock" name="stock" style="background-color:#2C394B">
+               <br></br>
+               <br style="color:#e85a3e">Seleccionar Acción: <select name="cardtype" id="cardtypeid" style="color:#e85a3e; background-color:#2C394B; font-weight: bold">
+                <option value="idSearch" style="color:#e85a3e; font-weight: bold">Buscar por Id</option>
+                <option value="add" style="color:#e85a3e; font-weight: bold">Agregar</option>
+                <option value="delete" style="color:#e85a3e; font-weight: bold">Borrar</option>
+                <option value="viewAll" style="color:#e85a3e; font-weight: bold">Ver todos</option>
+                <option value="update" style="color:#e85a3e; font-weight: bold">Actualizar</option>
+                </select><br/>
+               <p class="button">
+                <button type="submit" style="color:#e85a3e; background-color:#334756; font-weight: bold">Ejecutar</button></p>
+           </form>
+           <div>
+            <a href="../idSearch.html" style="color:#e85a3e;font-weight:bold;font-family:Roboto">Buscar por id</a>
+            <a href="../update.html" style="color:#e85a3e;font-weight:bold;font-family:Roboto">Actualizar</a>
+            <a href="../delete.html" style="color:#e85a3e;font-weight:bold;font-family:Roboto">Eliminar por id</a>
+            <a href="../viewAll.html" style="color:#e85a3e;font-weight:bold;font-family:Roboto">Buscar por id</a>
+           </div>
+           
+
+    </main> 
+  </body>
+</html>
